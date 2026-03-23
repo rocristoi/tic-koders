@@ -481,8 +481,7 @@ export default function App() {
               }`}
             >
               <Award className="w-4 h-4" />
-              <span className="hidden sm:inline">Posibili Calificați</span>
-              <span className="sm:hidden">Calificați</span>
+              <span >Posibili Calificați</span>
             </button>
             <CustomSelect
               value={selectedCounty}
