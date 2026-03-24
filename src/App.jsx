@@ -15,6 +15,10 @@ import {
   Award,
   ChevronLeft,
   ChevronRight,
+  UserCheck,
+  Activity,
+  TrendingUp,
+  PieChart,
 } from "lucide-react";
 import {
   BarChart,
@@ -23,6 +27,7 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
+  CartesianGrid,
 } from "recharts";
 import rezultate from "./assets/rezultate.json";
 
@@ -362,7 +367,7 @@ export default function App() {
         });
       });
     });
-    // Peste 60p
+
     candidates = candidates.map((c) => {
       const groupKey = `${c.county}-${c.class}`;
       const isQualifier =
@@ -403,6 +408,20 @@ export default function App() {
     currentPage * ITEMS_PER_PAGE,
   );
 
+  const stats = useMemo(() => {
+    const total = filteredCandidates.length;
+    const absent = filteredCandidates.filter((c) => c.isAbsent).length;
+    const present = total - absent;
+    const qualifiers = filteredCandidates.filter((c) => c.isQualifier).length;
+    const sum = filteredCandidates.reduce(
+      (acc, c) => acc + (c.isAbsent ? 0 : c.sortScore),
+      0,
+    );
+    const avg = present > 0 ? (sum / present).toFixed(2) : 0;
+
+    return { total, present, absent, qualifiers, avg };
+  }, [filteredCandidates]);
+
   const topScoresData = useMemo(() => {
     return filteredCandidates
       .filter((c) => !c.isAbsent)
@@ -415,7 +434,7 @@ export default function App() {
 
   const participationData = useMemo(() => {
     const counts = {};
-    allCandidates.forEach((c) => {
+    filteredCandidates.forEach((c) => {
       if (!c.isAbsent) {
         counts[c.county] = (counts[c.county] || 0) + 1;
       }
@@ -424,7 +443,40 @@ export default function App() {
       .map(([county, count]) => ({ county, count }))
       .sort((a, b) => b.count - a.count)
       .slice(0, 10);
-  }, [allCandidates]);
+  }, [filteredCandidates]);
+
+  const scoreDistributionData = useMemo(() => {
+    const bins = { "0-20": 0, "21-40": 0, "41-60": 0, "61-80": 0, "81-100": 0 };
+    filteredCandidates.forEach((c) => {
+      if (c.isAbsent) return;
+      const score = c.sortScore;
+      if (score <= 20) bins["0-20"]++;
+      else if (score <= 40) bins["21-40"]++;
+      else if (score <= 60) bins["41-60"]++;
+      else if (score <= 80) bins["61-80"]++;
+      else bins["81-100"]++;
+    });
+    return Object.entries(bins).map(([name, count]) => ({ name, count }));
+  }, [filteredCandidates]);
+
+  const classAveragesData = useMemo(() => {
+    const classData = {};
+    filteredCandidates.forEach((c) => {
+      if (c.isAbsent) return;
+      if (!classData[c.class]) classData[c.class] = { sum: 0, count: 0 };
+      classData[c.class].sum += c.sortScore;
+      classData[c.class].count++;
+    });
+    return Object.entries(classData)
+      .map(([className, d]) => ({
+        name: formatSection(className)
+          .replace("Clasa a ", "")
+          .replace("-a", "")
+          .replace("Secțiunea ", ""),
+        avg: Number((d.sum / d.count).toFixed(1)),
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+  }, [filteredCandidates]);
 
   return (
     <div className="min-h-[100dvh] flex flex-col bg-zinc-950 text-zinc-300 font-sans">
@@ -435,7 +487,6 @@ export default function App() {
       <header className="relative bg-zinc-900 border-b border-zinc-800 shrink-0 overflow-hidden">
         <div className="absolute inset-0 md:left-1/4 z-0">
           <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-zinc-900 via-zinc-900/80 to-transparent md:via-zinc-900/40 z-10"></div>
-
           <img
             className="w-full h-full object-cover opacity-30 md:opacity-50 mix-blend-overlay"
             src="https://pensiunea-amurg.ro/wp-content/uploads/2021/12/parc-central-scaled-1-1024x682.jpg"
@@ -459,12 +510,12 @@ export default function App() {
       </header>
 
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 py-8">
-        <div className="flex flex-col md:flex-row gap-4 mb-8">
+        <div className="flex flex-col md:flex-row gap-4 mb-6">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
             <input
               type="text"
-              placeholder="Caută după ID (ex. B1_12_003, B112003, B1 12 003)..."
+              placeholder="Caută după ID (ex. B1_12_003)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-10 pr-4 py-2 bg-zinc-900 border border-zinc-800 focus:outline-none focus:border-zinc-600 transition-colors text-zinc-100 placeholder-zinc-600 rounded-sm text-sm"
@@ -481,7 +532,7 @@ export default function App() {
               }`}
             >
               <Award className="w-4 h-4" />
-              <span >Posibili Calificați</span>
+              <span>Posibili Calificați</span>
             </button>
             <CustomSelect
               value={selectedCounty}
@@ -495,6 +546,64 @@ export default function App() {
               options={classOptions}
               placeholder="Alege Categoria"
             />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div className="bg-zinc-900 border border-zinc-800 p-4 rounded-sm flex items-center justify-between">
+            <div>
+              <p className="text-xs text-zinc-500 mb-1 uppercase tracking-wide">
+                Total Candidați
+              </p>
+              <p className="text-2xl font-semibold text-zinc-100">
+                {stats.total}
+              </p>
+            </div>
+            <div className="p-3 bg-gray-500/10 rounded-sm">
+              <Users className="w-5 h-5 text-gray-500" />
+            </div>
+          </div>
+          <div className="bg-zinc-900 border border-zinc-800 p-4 rounded-sm flex items-center justify-between">
+            <div>
+              <p className="text-xs text-zinc-500 mb-1 uppercase tracking-wide">
+                Prezenți / Absenți
+              </p>
+              <p className="text-2xl font-semibold text-zinc-100">
+                {stats.present}{" "}
+                <span className="text-sm text-zinc-500 font-normal">
+                  / {stats.absent}
+                </span>
+              </p>
+            </div>
+            <div className="p-3 bg-gray-500/10 rounded-sm">
+              <UserCheck className="w-5 h-5 text-gray-500" />
+            </div>
+          </div>
+          <div className="bg-zinc-900 border border-zinc-800 p-4 rounded-sm flex items-center justify-between">
+            <div>
+              <p className="text-xs text-zinc-500 mb-1 uppercase tracking-wide">
+                Posibili Calificați
+              </p>
+              <p className="text-2xl font-semibold text-zinc-100">
+                {stats.qualifiers}
+              </p>
+            </div>
+            <div className="p-3 bg-gray-500/10 rounded-sm">
+              <Award className="w-5 h-5 text-gray-500" />
+            </div>
+          </div>
+          <div className="bg-zinc-900 border border-zinc-800 p-4 rounded-sm flex items-center justify-between">
+            <div>
+              <p className="text-xs text-zinc-500 mb-1 uppercase tracking-wide">
+                Medie Punctaje
+              </p>
+              <p className="text-2xl font-semibold text-zinc-100">
+                {stats.avg}
+              </p>
+            </div>
+            <div className="p-3 bg-gray-500/10 rounded-sm">
+              <Activity className="w-5 h-5 text-gray-500" />
+            </div>
           </div>
         </div>
 
@@ -552,7 +661,6 @@ export default function App() {
                                 </div>
                               )}
                             </div>
-                            {/* Show a sub-label for County on mobile only since the column is hidden */}
                             <div className="sm:hidden text-[10px] text-zinc-500 mt-0.5 flex items-center gap-1">
                               <MapPin className="w-2.5 h-2.5" />{" "}
                               {candidate.county} • {candidate.class}
@@ -601,7 +709,6 @@ export default function App() {
                 </table>
               </div>
 
-              {/* Pagination bar - Optimized for mobile tap area */}
               {totalPages > 1 && (
                 <div className="mt-auto flex items-center justify-between p-3 sm:p-4 bg-zinc-950 border-t border-zinc-800">
                   <div className="text-xs sm:text-sm text-zinc-500">
@@ -643,6 +750,11 @@ export default function App() {
                 {topScoresData.length > 0 ? (
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={topScoresData}>
+                      <CartesianGrid
+                        strokeDasharray="3 3"
+                        vertical={false}
+                        stroke="#27272a"
+                      />
                       <XAxis
                         dataKey="candidate_id"
                         tick={{ fill: "#71717a", fontSize: 10 }}
@@ -674,7 +786,111 @@ export default function App() {
                   </ResponsiveContainer>
                 ) : (
                   <div className="h-full flex items-center justify-center text-xs text-zinc-600 italic">
-                    Date insuficiente pentru grafic
+                    Date insuficiente
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 border border-zinc-800 rounded-sm p-4 hidden lg:block">
+              <h3 className="text-sm font-medium text-zinc-100 flex items-center gap-2 mb-4">
+                <PieChart className="w-4 h-4 text-zinc-400" /> Distribuție
+                Punctaje
+              </h3>
+              <div className="h-48">
+                {scoreDistributionData.length > 0 ? (
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                      data={scoreDistributionData}
+                      margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+                    >
+                      <CartesianGrid
+                        strokeDasharray="3 3"
+                        vertical={false}
+                        stroke="#27272a"
+                      />
+                      <XAxis
+                        dataKey="name"
+                        tick={{ fill: "#71717a", fontSize: 10 }}
+                        tickLine={false}
+                        axisLine={false}
+                      />
+                      <YAxis
+                        tick={{ fill: "#71717a", fontSize: 10 }}
+                        tickLine={false}
+                        axisLine={false}
+                      />
+                      <Tooltip
+                        cursor={{ fill: "#27272a" }}
+                        contentStyle={{
+                          backgroundColor: "#18181b",
+                          border: "1px solid #27272a",
+                          borderRadius: "2px",
+                          color: "#f4f4f5",
+                          fontSize: "12px",
+                        }}
+                        formatter={(value) => [`${value} elevi`, "Număr"]}
+                      />
+                      <Bar
+                        dataKey="count"
+                        fill="#52525b"
+                        radius={[2, 2, 0, 0]}
+                      />
+                    </BarChart>
+                  </ResponsiveContainer>
+                ) : (
+                  <div className="h-full flex items-center justify-center text-xs text-zinc-600 italic">
+                    Date insuficiente
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div className="bg-zinc-900 border border-zinc-800 rounded-sm p-4 hidden lg:block">
+              <h3 className="text-sm font-medium text-zinc-100 flex items-center gap-2 mb-4">
+                <TrendingUp className="w-4 h-4 text-zinc-400" /> Medie Punctaje
+                / Clasă
+              </h3>
+              <div className="h-48">
+                {classAveragesData.length > 0 ? (
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart
+                      data={classAveragesData}
+                      margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
+                    >
+                      <CartesianGrid
+                        strokeDasharray="3 3"
+                        vertical={false}
+                        stroke="#27272a"
+                      />
+                      <XAxis
+                        dataKey="name"
+                        tick={{ fill: "#71717a", fontSize: 10 }}
+                        tickLine={false}
+                        axisLine={false}
+                      />
+                      <YAxis
+                        tick={{ fill: "#71717a", fontSize: 10 }}
+                        tickLine={false}
+                        axisLine={false}
+                      />
+                      <Tooltip
+                        cursor={{ fill: "#27272a" }}
+                        contentStyle={{
+                          backgroundColor: "#18181b",
+                          border: "1px solid #27272a",
+                          borderRadius: "2px",
+                          color: "#f4f4f5",
+                          fontSize: "12px",
+                        }}
+                        formatter={(value) => [`${value} pct`, "Medie"]}
+                      />
+                      <Bar dataKey="avg" fill="#52525b" radius={[2, 2, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                ) : (
+                  <div className="h-full flex items-center justify-center text-xs text-zinc-600 italic">
+                    Date insuficiente
                   </div>
                 )}
               </div>
@@ -712,7 +928,6 @@ export default function App() {
                           color: "#f4f4f5",
                           fontSize: "12px",
                         }}
-                        itemStyle={{ color: "#f4f4f5" }}
                         formatter={(value) => [
                           `${value} elevi prezenți`,
                           "Participare",
@@ -826,7 +1041,7 @@ export default function App() {
             Sursă GitHub
           </a>
 
-          <div className="flex  gap-2 text-sm text-zinc-400 items-center justify-center">
+          <div className="flex gap-2 text-sm text-zinc-400 items-center justify-center">
             <a
               href="https://koders.ro/"
               className="group-hover group"
