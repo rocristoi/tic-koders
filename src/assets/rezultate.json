@@ -5301,6 +5301,652 @@
       "contestations": []
     }
   }
+},
+{
+  "name": "Bihor",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "BH_09_001", "scores": [7, 4, 3, 2, 17, 3, 5, 12, 11], "total": 74 },
+        { "candidate_id": "BH_09_002", "scores": [8, 5, 5, 2, 19, 7, 5, 16, 17], "total": 94 },
+        { "candidate_id": "BH_09_003", "scores": [4, 5, 0, 0, 16, 1, 0, 12, 4], "total": 52 },
+        { "candidate_id": "BH_09_004", "scores": [6, 5, 1, 2, 18, 4, 2, 15, 7], "total": 70 },
+        { "candidate_id": "BH_09_005", "scores": [4, 4, 1, 0, 14, 5, 0, 9, 5], "total": 52 },
+        { "candidate_id": "BH_09_006", "scores": [2, 0, 0, 0, 15, 0, 0, 6, 0], "total": 33 },
+        { "candidate_id": "BH_09_007", "scores": [3, 5, 1, 1, 11, 3, 1, 7, 5], "total": 47 },
+        { "candidate_id": "BH_09_008", "scores": [5, 5, 1, 2, 17, 5, 3, 3, 0], "total": 51 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "BH_10_001", "scores": [0, 4, 15, 15, 0, 0], "total": 44 },
+        { "candidate_id": "BH_10_002", "scores": [1, 0, 15, 13, 0, 0], "total": 39 },
+        { "candidate_id": "BH_10_003", "scores": [0, 9, 14, 11, 0, 0], "total": 44 },
+        { "candidate_id": "BH_10_004", "scores": [6, 3, 14, 8, 0, 0], "total": 41 },
+        { "candidate_id": "BH_10_005", "scores": [0, 6, 14, 13, 0, 0], "total": 43 },
+        { "candidate_id": "BH_10_017", "scores": [0, 0, 0, 0, 0, 0], "total": "Abs" },
+        { "candidate_id": "BH_10_018", "scores": [6, 0, 11, 0, 15, 0], "total": 42 },
+        { "candidate_id": "BH_10_019", "scores": [0, 4, 13, 6, 0, 0], "total": 33 },
+        { "candidate_id": "BH_10_020", "scores": [6, 7, 17, 12, 2, 21], "total": 75 },
+        { "candidate_id": "BH_10_021", "scores": [1, 15, 16, 11, 0, 0], "total": 53 },
+        { "candidate_id": "BH_10_022", "scores": [0, 0, 0, 0, 0, 0], "total": "Abs" }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "BH_11_001", "scores": [10, 12, 13, 7, 8, 0], "total": 60 },
+        { "candidate_id": "BH_11_002", "scores": [10, 8, 11, 3, 3, 0], "total": 45 },
+        { "candidate_id": "BH_11_003", "scores": [14, 13, 11, 9, 8, 0], "total": 65 },
+        { "candidate_id": "BH_11_004", "scores": [6, 8, 12, 1, 7, 0], "total": 44 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "BH_12_001", "scores": [12, 12, 13, 0, 9, 0], "total": 56 },
+        { "candidate_id": "BH_12_002", "scores": [7, 10, 14, 1, 12, 10], "total": 64 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "BH_CS_001", "scores": [19, 0, 13, 2, 5, 2, 5], "total": 56 },
+        { "candidate_id": "BH_CS_002", "scores": [20, 14, 18, 5, 5, 5, 5], "total": 82 },
+        { "candidate_id": "BH_CS_003", "scores": [15, 12, 2, 3, 5, 0, 5], "total": 52 },
+        { "candidate_id": "BH_CS_004", "scores": [20, 15, 30, 5, 5, 10, 5], "total": 100 },
+        { "candidate_id": "BH_CS_005", "scores": [15, 0, 5, 0, 5, 18, 0], "total": 53 },
+        { "candidate_id": "BH_CS_006", "scores": [0, 5, 0, 5, 2, 15, 20], "total": 57 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Arges",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "AG_09_001", "scores": [3, 0, 0, 1, 15, 6, 1, 0, 17], "total": 53 },
+        { "candidate_id": "AG_09_002", "scores": [5, 0, 0, 0, 0, 0, 0, 3, 0], "total": 18 },
+        { "candidate_id": "AG_09_003", "scores": [5, 0, 3, 2, 13, 1, 1, 15, 11], "total": 61 },
+        { "candidate_id": "AG_09_004", "scores": [0, 0, 0, 1, 15, 2, 0, 3, 11], "total": 46 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "AG_10_001", "scores": [0, 5, 2, 5, 14, 14], "total": 50 },
+        { "candidate_id": "AG_10_002", "scores": [0, 5, 9, 7, 17, 17], "total": 65 },
+        { "candidate_id": "AG_10_003", "scores": [6, 5, 2, 7, 19, 19], "total": 87 },
+        { "candidate_id": "AG_10_004", "scores": [0, 5, 0, 5, 14, 14], "total": 47 },
+        { "candidate_id": "AG_10_005", "scores": [0, 3, 0, 3, 14, 14], "total": 44 },
+        { "candidate_id": "AG_10_006", "scores": [0, 3, 2, 5, 17, 17], "total": 48 },
+        { "candidate_id": "AG_10_007", "scores": [0, 5, 2, 7, 19, 19], "total": 54 },
+        { "candidate_id": "AG_10_008", "scores": [0, 5, 0, 5, 16, 16], "total": 46 },
+        { "candidate_id": "AG_10_009", "scores": [0, 2, 0, 2, 10, 10], "total": 39 },
+        { "candidate_id": "AG_10_010", "scores": [], "total": "ABSENT" }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "AG_11_001", "scores": [15, 14, 15, 10, 10, 21], "total": 95 },
+        { "candidate_id": "AG_11_002", "scores": [13, 0, 4, 3, 3, 0], "total": 33 },
+        { "candidate_id": "AG_11_003", "scores": [0, 0, 0, 0, 0, 0], "total": 10 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "AG_12_001", "scores": [12, 12, 13, 16, 14, 11], "total": 88 },
+        { "candidate_id": "AG_12_002", "scores": [10, 0, 12, 2, 13, 11], "total": 58 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "AG_CS_001", "scores": [18, 14, 2, 5, 5, 1, 5], "total": 60 },
+        { "candidate_id": "AG_CS_002", "scores": [20, 15, 28, 5, 5, 10, 5], "total": 98 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Iasi",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "IS_09_001", "scores": [], "total": 73 },
+        { "candidate_id": "IS_09_002", "scores": [], "total": 81 },
+        { "candidate_id": "IS_09_003", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_09_004", "scores": [], "total": 38 },
+        { "candidate_id": "IS_09_005", "scores": [], "total": 66 },
+        { "candidate_id": "IS_09_006", "scores": [], "total": 42 },
+        { "candidate_id": "IS_09_007", "scores": [], "total": 75 },
+        { "candidate_id": "IS_09_008", "scores": [], "total": 36 },
+        { "candidate_id": "IS_09_009", "scores": [], "total": 65 },
+        { "candidate_id": "IS_09_010", "scores": [], "total": 64 },
+        { "candidate_id": "IS_09_011", "scores": [], "total": 73 },
+        { "candidate_id": "IS_09_012", "scores": [], "total": 23 },
+        { "candidate_id": "IS_09_013", "scores": [], "total": 38 },
+        { "candidate_id": "IS_09_014", "scores": [], "total": 52 },
+        { "candidate_id": "IS_09_015", "scores": [], "total": 52 },
+        { "candidate_id": "IS_09_016", "scores": [], "total": 42 },
+        { "candidate_id": "IS_09_017", "scores": [], "total": 81 },
+        { "candidate_id": "IS_09_018", "scores": [], "total": 59 },
+        { "candidate_id": "IS_09_019", "scores": [], "total": 89 },
+        { "candidate_id": "IS_09_020", "scores": [], "total": 85 },
+        { "candidate_id": "IS_09_021", "scores": [], "total": 31 },
+        { "candidate_id": "IS_09_022", "scores": [], "total": 13 },
+        { "candidate_id": "IS_09_023", "scores": [], "total": 60 },
+        { "candidate_id": "IS_09_024", "scores": [], "total": 64 },
+        { "candidate_id": "IS_09_025", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_09_026", "scores": [], "total": 57 },
+        { "candidate_id": "IS_09_027", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_09_028", "scores": [], "total": 25 },
+        { "candidate_id": "IS_09_029", "scores": [], "total": 56 },
+        { "candidate_id": "IS_09_030", "scores": [], "total": 23 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "IS_10_031", "scores": [], "total": 65 },
+        { "candidate_id": "IS_10_032", "scores": [], "total": 29 },
+        { "candidate_id": "IS_10_033", "scores": [], "total": 44 },
+        { "candidate_id": "IS_10_034", "scores": [], "total": 41 },
+        { "candidate_id": "IS_10_035", "scores": [], "total": 52 },
+        { "candidate_id": "IS_10_036", "scores": [], "total": 15 },
+        { "candidate_id": "IS_10_037", "scores": [], "total": 30 },
+        { "candidate_id": "IS_10_038", "scores": [], "total": 46 },
+        { "candidate_id": "IS_10_039", "scores": [], "total": 45 },
+        { "candidate_id": "IS_10_040", "scores": [], "total": 22 },
+        { "candidate_id": "IS_10_041", "scores": [], "total": 50 },
+        { "candidate_id": "IS_10_042", "scores": [], "total": 45 },
+        { "candidate_id": "IS_10_043", "scores": [], "total": 19 },
+        { "candidate_id": "IS_10_044", "scores": [], "total": 33 },
+        { "candidate_id": "IS_10_045", "scores": [], "total": 43 },
+        { "candidate_id": "IS_10_046", "scores": [], "total": 34 },
+        { "candidate_id": "IS_10_047", "scores": [], "total": 51 },
+        { "candidate_id": "IS_10_048", "scores": [], "total": 62 },
+        { "candidate_id": "IS_10_049", "scores": [], "total": 36 },
+        { "candidate_id": "IS_10_050", "scores": [], "total": 42 },
+        { "candidate_id": "IS_10_051", "scores": [], "total": 31 },
+        { "candidate_id": "IS_10_052", "scores": [], "total": 43 },
+        { "candidate_id": "IS_10_053", "scores": [], "total": 31 },
+        { "candidate_id": "IS_10_054", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_10_055", "scores": [], "total": 34 },
+        { "candidate_id": "IS_10_056", "scores": [], "total": 38 },
+        { "candidate_id": "IS_10_057", "scores": [], "total": 67 },
+        { "candidate_id": "IS_10_058", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_10_059", "scores": [], "total": 47 },
+        { "candidate_id": "IS_10_060", "scores": [], "total": 33 },
+        { "candidate_id": "IS_10_061", "scores": [], "total": 41 },
+        { "candidate_id": "IS_10_062", "scores": [], "total": 55 }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "IS_11_063", "scores": [], "total": 42 },
+        { "candidate_id": "IS_11_064", "scores": [], "total": 13 },
+        { "candidate_id": "IS_11_065", "scores": [], "total": 40 },
+        { "candidate_id": "IS_11_066", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_11_067", "scores": [], "total": 29 },
+        { "candidate_id": "IS_11_068", "scores": [], "total": 25 },
+        { "candidate_id": "IS_11_069", "scores": [], "total": 23 },
+        { "candidate_id": "IS_11_070", "scores": [], "total": 31 },
+        { "candidate_id": "IS_11_071", "scores": [], "total": 45 },
+        { "candidate_id": "IS_11_072", "scores": [], "total": 68 },
+        { "candidate_id": "IS_11_073", "scores": [], "total": 11 },
+        { "candidate_id": "IS_11_074", "scores": [], "total": 59 },
+        { "candidate_id": "IS_11_075", "scores": [], "total": 23 },
+        { "candidate_id": "IS_11_076", "scores": [], "total": 56 },
+        { "candidate_id": "IS_11_077", "scores": [], "total": 47 },
+        { "candidate_id": "IS_11_078", "scores": [], "total": 80 },
+        { "candidate_id": "IS_11_079", "scores": [], "total": 51 },
+        { "candidate_id": "IS_11_080", "scores": [], "total": 34 },
+        { "candidate_id": "IS_11_081", "scores": [], "total": 34 },
+        { "candidate_id": "IS_11_082", "scores": [], "total": 26 },
+        { "candidate_id": "IS_11_083", "scores": [], "total": 18 },
+        { "candidate_id": "IS_11_084", "scores": [], "total": 43 },
+        { "candidate_id": "IS_11_085", "scores": [], "total": 36 },
+        { "candidate_id": "IS_11_086", "scores": [], "total": 37 },
+        { "candidate_id": "IS_11_087", "scores": [], "total": 27 },
+        { "candidate_id": "IS_11_088", "scores": [], "total": 78 },
+        { "candidate_id": "IS_11_089", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_11_090", "scores": [], "total": 57 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "IS_12_091", "scores": [], "total": 35 },
+        { "candidate_id": "IS_12_092", "scores": [], "total": 40 },
+        { "candidate_id": "IS_12_093", "scores": [], "total": 42 },
+        { "candidate_id": "IS_12_094", "scores": [], "total": 46 },
+        { "candidate_id": "IS_12_095", "scores": [], "total": "Absent" },
+        { "candidate_id": "IS_12_096", "scores": [], "total": 44 },
+        { "candidate_id": "IS_12_097", "scores": [], "total": 39 },
+        { "candidate_id": "IS_12_098", "scores": [], "total": 35 },
+        { "candidate_id": "IS_12_099", "scores": [], "total": 45 },
+        { "candidate_id": "IS_12_100", "scores": [], "total": 37 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "IS_CS_101", "scores": [], "total": 57 },
+        { "candidate_id": "IS_CS_102", "scores": [], "total": 67 },
+        { "candidate_id": "IS_CS_103", "scores": [], "total": 60 },
+        { "candidate_id": "IS_CS_104", "scores": [], "total": 62 },
+        { "candidate_id": "IS_CS_105", "scores": [], "total": 25 },
+        { "candidate_id": "IS_CS_106", "scores": [], "total": 92 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Ilfov",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "IF_09_005", "scores": [], "total": "Absent" },
+        { "candidate_id": "IF_09_003", "scores": [], "total": 96 },
+        { "candidate_id": "IF_09_002", "scores": [], "total": 64 },
+        { "candidate_id": "IF_09_001", "scores": [], "total": 60 },
+        { "candidate_id": "IF_09_004", "scores": [], "total": 27 },
+        { "candidate_id": "IF_09_006", "scores": [], "total": 24 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "IF_10_003", "scores": [], "total": 62 },
+        { "candidate_id": "IF_10_001", "scores": [], "total": 57 },
+        { "candidate_id": "IF_10_006", "scores": [], "total": 52 },
+        { "candidate_id": "IF_10_007", "scores": [], "total": 43 },
+        { "candidate_id": "IF_10_002", "scores": [], "total": 42 },
+        { "candidate_id": "IF_10_005", "scores": [], "total": 40 },
+        { "candidate_id": "IF_10_004", "scores": [], "total": 16 }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "IF_11_003", "scores": [], "total": 61 },
+        { "candidate_id": "IF_11_002", "scores": [], "total": 39 },
+        { "candidate_id": "IF_11_001", "scores": [], "total": 31 },
+        { "candidate_id": "IF_11_005", "scores": [], "total": 26 },
+        { "candidate_id": "IF_11_004", "scores": [], "total": 25 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "IF_12_001", "scores": [], "total": 56 },
+        { "candidate_id": "IF_12_003", "scores": [], "total": 44 },
+        { "candidate_id": "IF_12_002", "scores": [], "total": 39 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Mehedinti",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "MH_09_004", "scores": [], "total": 76 },
+        { "candidate_id": "MH_09_007", "scores": [], "total": 55 },
+        { "candidate_id": "MH_09_002", "scores": [], "total": 51 },
+        { "candidate_id": "MH_09_008", "scores": [], "total": 38 },
+        { "candidate_id": "MH_09_019", "scores": [], "total": 35 },
+        { "candidate_id": "MH_09_009", "scores": [], "total": 28 },
+        { "candidate_id": "MH_09_017", "scores": [], "total": 26 },
+        { "candidate_id": "MH_09_001", "scores": [], "total": 25 },
+        { "candidate_id": "MH_09_010", "scores": [], "total": 24 },
+        { "candidate_id": "MH_09_003", "scores": [], "total": 23 },
+        { "candidate_id": "MH_09_006", "scores": [], "total": 23 },
+        { "candidate_id": "MH_09_018", "scores": [], "total": 22 },
+        { "candidate_id": "MH_09_011", "scores": [], "total": 19 },
+        { "candidate_id": "MH_09_014", "scores": [], "total": 19 },
+        { "candidate_id": "MH_09_005", "scores": [], "total": 18 },
+        { "candidate_id": "MH_09_015", "scores": [], "total": 16 },
+        { "candidate_id": "MH_09_016", "scores": [], "total": 12 },
+        { "candidate_id": "MH_09_012", "scores": [], "total": "absent" },
+        { "candidate_id": "MH_09_013", "scores": [], "total": "absent" }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "MH_10_003", "scores": [], "total": 45 },
+        { "candidate_id": "MH_10_011", "scores": [], "total": 42 },
+        { "candidate_id": "MH_10_001", "scores": [], "total": 40 },
+        { "candidate_id": "MH_10_009", "scores": [], "total": 40 },
+        { "candidate_id": "MH_10_004", "scores": [], "total": 38 },
+        { "candidate_id": "MH_10_005", "scores": [], "total": 35 },
+        { "candidate_id": "MH_10_007", "scores": [], "total": 34 },
+        { "candidate_id": "MH_10_008", "scores": [], "total": 31 },
+        { "candidate_id": "MH_10_010", "scores": [], "total": 29 },
+        { "candidate_id": "MH_10_006", "scores": [], "total": 23 },
+        { "candidate_id": "MH_10_002", "scores": [], "total": 22 }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "MH_11_014", "scores": [], "total": 52 },
+        { "candidate_id": "MH_11_013", "scores": [], "total": 51 },
+        { "candidate_id": "MH_11_001", "scores": [], "total": 43 },
+        { "candidate_id": "MH_11_015", "scores": [], "total": 43 },
+        { "candidate_id": "MH_11_008", "scores": [], "total": 39 },
+        { "candidate_id": "MH_11_002", "scores": [], "total": 38 },
+        { "candidate_id": "MH_11_016", "scores": [], "total": 37 },
+        { "candidate_id": "MH_11_005", "scores": [], "total": 33 },
+        { "candidate_id": "MH_11_007", "scores": [], "total": 33 },
+        { "candidate_id": "MH_11_010", "scores": [], "total": 30 },
+        { "candidate_id": "MH_11_006", "scores": [], "total": 28 },
+        { "candidate_id": "MH_11_011", "scores": [], "total": 27 },
+        { "candidate_id": "MH_11_009", "scores": [], "total": 26 },
+        { "candidate_id": "MH_11_012", "scores": [], "total": 24 },
+        { "candidate_id": "MH_11_003", "scores": [], "total": 13 },
+        { "candidate_id": "MH_11_004", "scores": [], "total": "absent" }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "MH_12_005", "scores": [], "total": 52 },
+        { "candidate_id": "MH_12_002", "scores": [], "total": 46 },
+        { "candidate_id": "MH_12_001", "scores": [], "total": 35 },
+        { "candidate_id": "MH_12_003", "scores": [], "total": 29 },
+        { "candidate_id": "MH_12_004", "scores": [], "total": 24 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "MH_CS_001", "scores": [], "total": 60 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Teleorman",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "TR_09_001", "scores": [], "total": 71 },
+        { "candidate_id": "TR_09_002", "scores": [], "total": 45 },
+        { "candidate_id": "TR_09_003", "scores": [], "total": 24 },
+        { "candidate_id": "TR_09_004", "scores": [], "total": 83 },
+        { "candidate_id": "TR_09_005", "scores": [], "total": 42 },
+        { "candidate_id": "TR_09_006", "scores": [], "total": 46 },
+        { "candidate_id": "TR_09_007", "scores": [], "total": 63 },
+        { "candidate_id": "TR_09_008", "scores": [], "total": 60 },
+        { "candidate_id": "TR_09_009", "scores": [], "total": 75 },
+        { "candidate_id": "TR_09_010", "scores": [], "total": 86 },
+        { "candidate_id": "TR_09_011", "scores": [], "total": 51 },
+        { "candidate_id": "TR_09_012", "scores": [], "total": 31 },
+        { "candidate_id": "TR_09_013", "scores": [], "total": 44 },
+        { "candidate_id": "TR_09_014", "scores": [], "total": 47 },
+        { "candidate_id": "TR_09_015", "scores": [], "total": 13 },
+        { "candidate_id": "TR_09_016", "scores": [], "total": 68 },
+        { "candidate_id": "TR_09_017", "scores": [], "total": 80 },
+        { "candidate_id": "TR_09_018", "scores": [], "total": 35 },
+        { "candidate_id": "TR_09_019", "scores": [], "total": 55 },
+        { "candidate_id": "TR_09_020", "scores": [], "total": 34 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "TR_10_001", "scores": [], "total": 48 },
+        { "candidate_id": "TR_10_002", "scores": [], "total": 65 },
+        { "candidate_id": "TR_10_003", "scores": [], "total": 47 },
+        { "candidate_id": "TR_10_004", "scores": [], "total": 57 },
+        { "candidate_id": "TR_10_005", "scores": [], "total": "Absent" },
+        { "candidate_id": "TR_10_006", "scores": [], "total": 60 },
+        { "candidate_id": "TR_10_007", "scores": [], "total": 39 },
+        { "candidate_id": "TR_10_008", "scores": [], "total": 53 },
+        { "candidate_id": "TR_10_009", "scores": [], "total": 86 },
+        { "candidate_id": "TR_10_010", "scores": [], "total": "Absent" }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "TR_11_001", "scores": [], "total": "Absent" },
+        { "candidate_id": "TR_11_002", "scores": [], "total": 56 },
+        { "candidate_id": "TR_11_003", "scores": [], "total": 37 },
+        { "candidate_id": "TR_11_004", "scores": [], "total": 29 },
+        { "candidate_id": "TR_11_005", "scores": [], "total": 43 },
+        { "candidate_id": "TR_11_006", "scores": [], "total": 61 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "TR_12_001", "scores": [], "total": 45 },
+        { "candidate_id": "TR_12_002", "scores": [], "total": 49 },
+        { "candidate_id": "TR_12_003", "scores": [], "total": 54 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Valcea",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "VL_09_001", "scores": [7, 5, 5, 2, 19, 7, 5, 16, 14], "total": 90 },
+        { "candidate_id": "VL_09_002", "scores": [6, 5, 1, 0, 9, 1, 1, 6, 0], "total": 39 },
+        { "candidate_id": "VL_09_003", "scores": [5, 5, 1, 1, 14, 4, 1, 2, 13], "total": 56 },
+        { "candidate_id": "VL_09_004", "scores": [4, 5, 1, 0, 11, 2, 1, 1, 0], "total": 35 },
+        { "candidate_id": "VL_09_005", "scores": [6, 5, 4, 1, 12, 1, 0, 2, 0], "total": 41 },
+        { "candidate_id": "VL_09_006", "scores": [5, 5, 5, 2, 19, 6, 5, 16, 17], "total": 90 },
+        { "candidate_id": "VL_09_007", "scores": [6, 5, 1, 2, 18, 4, 2, 15, 7], "total": 70 },
+        { "candidate_id": "VL_09_008", "scores": [4, 4, 1, 0, 14, 5, 0, 9, 5], "total": 52 },
+        { "candidate_id": "VL_09_009", "scores": [2, 0, 0, 0, 15, 0, 0, 6, 0], "total": 33 },
+        { "candidate_id": "VL_09_010", "scores": [3, 5, 1, 1, 11, 3, 1, 7, 4], "total": 46 },
+        { "candidate_id": "VL_09_011", "scores": [5, 5, 1, 1, 4, 3, 5, 6, 0], "total": 40 },
+        { "candidate_id": "VL_09_012", "scores": [4, 4, 1, 1, 15, 1, 1, 14, 17], "total": 68 },
+        { "candidate_id": "VL_09_013", "scores": [4, 5, 5, 1, 14, 4, 0, 0, 9], "total": 52 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "VL_10_001", "scores": [6, 6, 17, 15, 0, 3], "total": 57 },
+        { "candidate_id": "VL_10_002", "scores": [6, 9, 17, 15, 14, 10], "total": 81 },
+        { "candidate_id": "VL_10_003", "scores": [6, 6, 16, 13, 0, 0], "total": 51 },
+        { "candidate_id": "VL_10_004", "scores": [], "total": "ABSENT" },
+        { "candidate_id": "VL_10_005", "scores": [3, 7, 17, 9, 0, 0], "total": 46 },
+        { "candidate_id": "VL_10_006", "scores": [3, 0, 14, 13, 0, 0], "total": 40 },
+        { "candidate_id": "VL_10_007", "scores": [6, 0, 17, 13, 0, 10], "total": 56 },
+        { "candidate_id": "VL_10_008", "scores": [4, 6, 15, 12, 1, 0], "total": 48 },
+        { "candidate_id": "VL_10_009", "scores": [0, 5, 15, 13, 0, 0], "total": 43 },
+        { "candidate_id": "VL_10_010", "scores": [6, 6, 15, 15, 0, 2], "total": 54 },
+        { "candidate_id": "VL_10_011", "scores": [0, 6, 11, 13, 0, 0], "total": 40 }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "VL_11_001", "scores": [14, 13, 11, 9, 8, 0], "total": 65 },
+        { "candidate_id": "VL_11_002", "scores": [6, 8, 12, 1, 7, 0], "total": 44 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "VL_12_001", "scores": [7, 7, 14, 0, 12, 10], "total": 60 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "VL_CS_001", "scores": [20, 15, 6, 5, 5, 2, 5], "total": 68 },
+        { "candidate_id": "VL_CS_002", "scores": [20, 13, 6, 3, 0, 3, 5], "total": 60 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Vaslui",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "VS_09_001", "scores": [], "total": 10 },
+        { "candidate_id": "VS_09_002", "scores": [], "total": 52 },
+        { "candidate_id": "VS_09_003", "scores": [], "total": 43 },
+        { "candidate_id": "VS_09_004", "scores": [], "total": 60 },
+        { "candidate_id": "VS_09_005", "scores": [], "total": 77 },
+        { "candidate_id": "VS_09_006", "scores": [], "total": 38 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "VS_10_001", "scores": [], "total": 65 },
+        { "candidate_id": "VS_10_002", "scores": [], "total": 26 },
+        { "candidate_id": "VS_10_003", "scores": [], "total": 54 },
+        { "candidate_id": "VS_10_004", "scores": [], "total": 67 },
+        { "candidate_id": "VS_10_005", "scores": [], "total": 48 },
+        { "candidate_id": "VS_10_006", "scores": [], "total": 35 },
+        { "candidate_id": "VS_10_007", "scores": [], "total": 44 },
+        { "candidate_id": "VS_10_008", "scores": [], "total": 52 },
+        { "candidate_id": "VS_10_009", "scores": [], "total": 43 },
+        { "candidate_id": "VS_10_010", "scores": [], "total": 55 }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "VS_11_001", "scores": [], "total": 45 },
+        { "candidate_id": "VS_11_002", "scores": [], "total": 56 },
+        { "candidate_id": "VS_11_003", "scores": [], "total": 61 },
+        { "candidate_id": "VS_11_004", "scores": [], "total": 40 },
+        { "candidate_id": "VS_11_005", "scores": [], "total": 42 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "VS_12_001", "scores": [], "total": 62 },
+        { "candidate_id": "VS_12_002", "scores": [], "total": 46 },
+        { "candidate_id": "VS_12_003", "scores": [], "total": 40 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "VS_CS_001", "scores": [], "total": 95 },
+        { "candidate_id": "VS_CS_002", "scores": [], "total": 87 },
+        { "candidate_id": "VS_CS_003", "scores": [], "total": 83 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Olt",
+  "results": {
+    "X": {
+      "initial": [
+        { "candidate_id": "OT_10_01", "scores": [6, 6, 19, 16, 1, 3], "total": 61 },
+        { "candidate_id": "OT_10_02", "scores": [1, 0, 18, 18, 2, 9], "total": 58 },
+        { "candidate_id": "OT_10_03", "scores": [0, 6, 17, 9, 0, 0], "total": 42 },
+        { "candidate_id": "OT_10_04", "scores": [0, 5, 19, 8, 0, 0], "total": 42 },
+        { "candidate_id": "OT_10_05", "scores": [0, 0, 0, 14, 0, 3], "total": 27 },
+        { "candidate_id": "OT_10_06", "scores": [1, 3, 15, 16, 0, 0], "total": 45 },
+        { "candidate_id": "OT_10_07", "scores": [0, 4, 14, 5, 0, 0], "total": 33 },
+        { "candidate_id": "OT_10_08", "scores": [], "total": "ABSENT" },
+        { "candidate_id": "OT_10_09", "scores": [], "total": "ABSENT" },
+        { "candidate_id": "OT_10_10", "scores": [0, 7, 18, 11, 0, 0], "total": 46 },
+        { "candidate_id": "OT_10_11", "scores": [1, 6, 19, 16, 1, 4], "total": 57 },
+        { "candidate_id": "OT_10_12", "scores": [0, 6, 0, 17, 0, 13], "total": 46 },
+        { "candidate_id": "OT_10_13", "scores": [2, 5, 10, 14, 0, 0], "total": 41 }
+      ],
+      "contestations": []
+    }
+  }
+},
+{
+  "name": "Calarasi",
+  "results": {
+    "IX": {
+      "initial": [
+        { "candidate_id": "CL_09_001", "scores": [], "total": 76 },
+        { "candidate_id": "CL_09_002", "scores": [], "total": 54 },
+        { "candidate_id": "CL_09_003", "scores": [], "total": 24 },
+        { "candidate_id": "CL_09_004", "scores": [], "total": 29 },
+        { "candidate_id": "CL_09_005", "scores": [], "total": 83 },
+        { "candidate_id": "CL_09_006", "scores": [], "total": 30 },
+        { "candidate_id": "CL_09_007", "scores": [], "total": 35 },
+        { "candidate_id": "CL_09_008", "scores": [], "total": 51 },
+        { "candidate_id": "CL_09_009", "scores": [], "total": 30 },
+        { "candidate_id": "CL_09_010", "scores": [], "total": 72 },
+        { "candidate_id": "CL_09_011", "scores": [], "total": 55 },
+        { "candidate_id": "CL_09_012", "scores": [], "total": 49 },
+        { "candidate_id": "CL_09_013", "scores": [], "total": 59 },
+        { "candidate_id": "CL_09_014", "scores": [], "total": 40 }
+      ],
+      "contestations": []
+    },
+    "X": {
+      "initial": [
+        { "candidate_id": "CL_10_001", "scores": [], "total": 41 },
+        { "candidate_id": "CL_10_002", "scores": [], "total": 44 },
+        { "candidate_id": "CL_10_003", "scores": [], "total": 40 },
+        { "candidate_id": "CL_10_004", "scores": [], "total": 55 },
+        { "candidate_id": "CL_10_005", "scores": [], "total": 51 },
+        { "candidate_id": "CL_10_006", "scores": [], "total": 39 },
+        { "candidate_id": "CL_10_007", "scores": [], "total": 31 },
+        { "candidate_id": "CL_10_008", "scores": [], "total": 26 },
+        { "candidate_id": "CL_10_009", "scores": [], "total": 49 },
+        { "candidate_id": "CL_10_010", "scores": [], "total": 47 },
+        { "candidate_id": "CL_10_011", "scores": [], "total": 49 }
+      ],
+      "contestations": []
+    },
+    "XI": {
+      "initial": [
+        { "candidate_id": "CL_11_001", "scores": [], "total": 30 },
+        { "candidate_id": "CL_11_002", "scores": [], "total": 42 },
+        { "candidate_id": "CL_11_003", "scores": [], "total": 41 },
+        { "candidate_id": "CL_11_004", "scores": [], "total": 28 },
+        { "candidate_id": "CL_11_005", "scores": [], "total": 24 },
+        { "candidate_id": "CL_11_006", "scores": [], "total": 31 },
+        { "candidate_id": "CL_11_007", "scores": [], "total": 32 }
+      ],
+      "contestations": []
+    },
+    "XII": {
+      "initial": [
+        { "candidate_id": "CL_12_001", "scores": [], "total": 32 },
+        { "candidate_id": "CL_12_002", "scores": [], "total": 27 },
+        { "candidate_id": "CL_12_003", "scores": [], "total": 61 },
+        { "candidate_id": "CL_12_004", "scores": [], "total": 35 }
+      ],
+      "contestations": []
+    },
+    "C#": {
+      "initial": [
+        { "candidate_id": "CL_CS_001", "scores": [], "total": 34 }
+      ],
+      "contestations": []
+    }
+  }
 }
 
   ]
